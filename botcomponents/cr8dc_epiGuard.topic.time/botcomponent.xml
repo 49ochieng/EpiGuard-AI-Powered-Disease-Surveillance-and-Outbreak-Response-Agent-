@@ -1,0 +1,10 @@
+<botcomponent schemaname="cr8dc_epiGuard.topic.time">
+  <componenttype>9</componenttype>
+  <iscustomizable>0</iscustomizable>
+  <name>time</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

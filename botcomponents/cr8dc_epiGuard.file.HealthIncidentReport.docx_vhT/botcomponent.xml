@@ -1,0 +1,12 @@
+<botcomponent schemaname="cr8dc_epiGuard.file.HealthIncidentReport.docx_vhT">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Health Incident Report.docx</description>
+  <filedata mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document">Health%20Incident%20Report.docx</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Health Incident Report.docx</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,14 @@
+<botcomponent_workflowset>
+  <botcomponent_workflow botcomponentid.schemaname="cr8dc_epiGuard.component.Whenafileiscreatedormodifiedpropertieso.0b70b4cc-ec49-4f83-8641-f8bdc5e6ffc" workflowid.workflowid="c401e371-4825-f011-8c4e-7c1e524ab8b0">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_workflow>
+  <botcomponent_workflow botcomponentid.schemaname="cr8dc_epiGuard.component.WhenanewemailarrivesV3.1b1f3ad9-3c60-4302-b4a0-6cf0bdc152bd" workflowid.workflowid="bea39131-4925-f011-8c4e-000d3a53a6a9">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_workflow>
+  <botcomponent_workflow botcomponentid.schemaname="cr8dc_epiGuard.topic.Escalate" workflowid.workflowid="18bef357-578a-ef11-ac21-000d3a31b04b">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_workflow>
+  <botcomponent_workflow botcomponentid.schemaname="cr8dc_epiGuard.topic.GeneratewordDocument" workflowid.workflowid="fba4a508-9dfb-ef11-bae3-7c1e528206ea">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_workflow>
+</botcomponent_workflowset>

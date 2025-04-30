@@ -1,0 +1,7 @@
+<environmentvariabledefinition schemaname="cr8dc_epiGuard.envVar._o0Bzi8YjaUYiumHhSNd6">
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>

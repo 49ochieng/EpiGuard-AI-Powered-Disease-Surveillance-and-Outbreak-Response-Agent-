@@ -1,0 +1,10 @@
+<botcomponent schemaname="cr8dc_epiGuard.component.Planner-Listmytasks">
+  <componenttype>9</componenttype>
+  <iscustomizable>0</iscustomizable>
+  <name>Planner - List my tasks</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

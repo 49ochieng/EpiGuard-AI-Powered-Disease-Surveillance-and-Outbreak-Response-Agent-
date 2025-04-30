@@ -1,0 +1,139 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_microsoftcopilotstudio": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr8dc_sharedmicrosoftcopilotstudio_54055"
+        },
+        "api": {
+          "name": "shared_microsoftcopilotstudio"
+        }
+      },
+      "shared_filesystem": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "crc65_sharedfilesystem_03c4b"
+        },
+        "api": {
+          "name": "shared_filesystem"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr8dc_sharedoffice365_b8b20"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_new_email_arrives_(V3)": {
+          "metadata": {
+            "Id::AQMkADZjODI3ZmQ4LWNhNGYtNGRiMy05NzM4LTE4YzEyZjUwMTkzNQAuAAADS0QWPfj_f0eBRQ714y0VSgEAgj435xRKU0WChqS46H-36QAAAgEMAAAA": "Inbox",
+            "operationMetadataId": "0645a352-498b-4f10-b48b-1ee283b6d9df"
+          },
+          "type": "OpenApiConnectionNotification",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365",
+              "operationId": "OnNewEmailV3",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+            },
+            "parameters": {
+              "folderPath": "Id::AQMkADZjODI3ZmQ4LWNhNGYtNGRiMy05NzM4LTE4YzEyZjUwMTkzNQAuAAADS0QWPfj_f0eBRQ714y0VSgEAgj435xRKU0WChqS46H-36QAAAgEMAAAA"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Sends_a_prompt_to_the_specified_copilot_for_processing": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "54e9c71b-fe8e-45fd-b950-8404fead4cb9"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_microsoftcopilotstudio",
+              "operationId": "ExecuteCopilot",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio"
+            },
+            "parameters": {
+              "Copilot": "cr8dc_epiGuard",
+              "body/message": "Use content from @{triggerBody()}"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Condition": {
+          "actions": {
+            "Get_Attachments": {
+              "foreach": "@triggerOutputs()?['body/attachments']",
+              "actions": {
+                "Create_file": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "512bdf68-4422-4c12-b76f-ae7bf8ba1fe9"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_filesystem",
+                      "operationId": "CreateFile",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_filesystem"
+                    },
+                    "parameters": {
+                      "folderPath": "C:\\Armelygate\\FileDrop",
+                      "name": "@items('Get_Attachments')?['name']",
+                      "body": "@items('Get_Attachments')?['contentBytes']"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                }
+              },
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "4456789c-b080-4ed9-b450-41c26e7913e8"
+              },
+              "type": "Foreach"
+            }
+          },
+          "runAfter": {
+            "Sends_a_prompt_to_the_specified_copilot_for_processing": [
+              "Succeeded"
+            ]
+          },
+          "expression": {
+            "equals": [
+              "@triggerOutputs()?['body/hasAttachments']",
+              "@true"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f0092311-5b58-4719-8300-f717a03aa4ca"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

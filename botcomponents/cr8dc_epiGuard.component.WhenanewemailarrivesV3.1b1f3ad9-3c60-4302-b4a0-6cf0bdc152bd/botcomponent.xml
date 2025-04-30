@@ -1,0 +1,12 @@
+<botcomponent schemaname="cr8dc_epiGuard.component.WhenanewemailarrivesV3.1b1f3ad9-3c60-4302-b4a0-6cf0bdc152bd">
+  <componenttype>17</componenttype>
+  <description>Trigger your agent with certain message upon event: When a new email arrives (V3).</description>
+  <iconurl>https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1747/1.0.1748.4181/office365/icon.png</iconurl>
+  <iscustomizable>0</iscustomizable>
+  <name>When a new email arrives (V3)</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

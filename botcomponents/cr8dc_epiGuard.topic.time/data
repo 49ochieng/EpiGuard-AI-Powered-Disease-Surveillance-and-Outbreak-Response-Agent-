@@ -1,0 +1,21 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    triggerQueries:
+      - current time
+      - what time is it
+      - time now
+      - tell me the time
+      - clock
+      - hour
+      - time of day
+      - exact time
+
+  actions:
+    - kind: SendActivity
+      id: SendActivity_Yqwwcx
+      activity: |-
+        {"Time is " & DateTimeValue(Now())
+        }

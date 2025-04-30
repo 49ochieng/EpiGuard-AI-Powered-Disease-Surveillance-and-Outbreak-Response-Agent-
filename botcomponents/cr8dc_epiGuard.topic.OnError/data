@@ -1,0 +1,83 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnError
+  id: onFriendlyError
+  actions:
+    - kind: SetVariable
+      id: setTimestamp
+      variable: init:Topic.CurrentTime
+      value:
+        kind: ValueExpression
+        literalValue:
+          kind: =Text(Now(), DateTimeFormat.UTC)
+
+    - kind: ConditionGroup
+      id: handleErrorConditions
+      conditions:
+        - id: contentFiltered
+          condition: false
+          actions:
+            - kind: SendActivity
+              id: msg_content_filtered
+              activity: |
+                🔐 I wasn’t able to access that information — it might be restricted or require special permissions.  
+                Please try rephrasing your question or asking about something else.
+
+        - id: notFound
+          condition: false
+          actions:
+            - kind: SendActivity
+              id: msg_not_found
+              activity: |
+                🔎 I couldn’t find anything that matches your request.  
+                Try asking the question a different way — I’m here to help!
+
+        - id: unauthorized
+          condition: false
+          actions:
+            - kind: SendActivity
+              id: msg_unauthorized
+              activity: |
+                🚫 Looks like you don’t have permission to access this info.  
+                You could try something else or check with your administrator.
+
+        - id: timeout
+          condition: false
+          actions:
+            - kind: SendActivity
+              id: msg_timeout
+              activity: |
+                ⏳ That took too long. I might’ve lost the connection trying to fetch that.  
+                Try simplifying or rewording your question and let’s try again.
+
+      elseActions:
+        - kind: SendActivity
+          id: msg_generic
+          activity:
+            text:
+              - ⚠️ Something unexpected happened. Please try rephrasing your question or asking something different.
+              - ⚠️ Oops! I ran into a snag. Mind asking that again a different way?
+              - ⚠️ I hit an error. Let’s try that again with a slightly different request.
+
+    - kind: LogCustomTelemetryEvent
+      id: logErrorTelemetry
+      eventName: FriendlyErrorLog
+      properties:
+        kind: ValueExpression
+        literalValue:
+          ConversationId:
+            kind: =System.Conversation.Id
+
+          ErrorCode:
+            kind: =System.Error.Code
+
+          ErrorMessage:
+            kind: =System.Error.Message
+
+          TimeUTC:
+            kind: =Topic.CurrentTime
+
+    - kind: CancelAllDialogs
+      id: cancelDialogsOnError
+
+id: FriendlyErrorHandler

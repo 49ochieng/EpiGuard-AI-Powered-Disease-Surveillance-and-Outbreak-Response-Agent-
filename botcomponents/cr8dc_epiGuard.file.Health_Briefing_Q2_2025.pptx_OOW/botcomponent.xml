@@ -1,0 +1,12 @@
+<botcomponent schemaname="cr8dc_epiGuard.file.Health_Briefing_Q2_2025.pptx_OOW">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Health_Briefing_Q2_2025.pptx</description>
+  <filedata mimetype="application/vnd.openxmlformats-officedocument.presentationml.presentation">Health_Briefing_Q2_2025.pptx</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Health_Briefing_Q2_2025.pptx</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,108 @@
+kind: AdaptiveDialog
+modelDescription: "This tool can handle queries like these: Talk to agent, Talk to a person, open a ticket, ticket, Talk to someone, Call back, Call customer service"
+startBehavior: CancelOtherTopics
+beginDialog:
+  kind: OnEscalate
+  id: main
+  intent:
+    displayName: Escalate
+    includeInOnSelectIntent: false
+    triggerQueries:
+      - Talk to agent
+      - Talk to a person
+      - Talk to someone
+      - Call back
+      - Call customer service
+      - Call me please
+      - Call support
+      - Call technical support
+      - Can an agent call me
+      - Can I call
+      - Can I get in touch with someone else
+      - Can I get real agent support
+      - Can I get transferred to a person to call
+      - Can I have a call in number Or can I be called
+      - Can I have a representative call me
+      - Can I schedule a call
+      - Can I speak to a representative
+      - Can I talk to a human
+      - Can I talk to a human assistant
+      - Can someone call me
+      - Chat with a human
+      - Chat with a representative
+      - Chat with agent
+      - Chat with someone please
+      - Connect me to a live agent
+      - Connect me to a person
+      - Could some one contact me by phone
+      - Customer agent
+      - Customer representative
+      - Customer service
+      - I need a manager to contact me
+      - I need customer service
+      - I need help from a person
+      - I need to speak with a live argent
+      - I need to talk to a specialist please
+      - I want to talk to customer service
+      - I want to proceed with live support
+      - I want to speak with a consultant
+      - I want to speak with a live tech
+      - I would like to speak with an associate
+      - I would like to talk to a technician
+      - Talk with tech support member
+      - Support
+      - problem
+      - error
+      - Immediate
+      - Attention
+      - Resolve
+      - Fix
+      - Alert
+      - Investigate
+      - Review
+      - Analyze
+      - Breakdown
+      - Malfunction
+      - ai engineer
+      - talk to ai engineer
+
+  actions:
+    - kind: SendActivity
+      id: sendMessage_s39DCt
+      conversationOutcome: Escalated
+      activity: Hi {System.User.FirstName}! It seems like your query requires specialized assistance. I am escalating your issue to our Support team.
+
+    - kind: Question
+      id: question_tcQJk4
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: init:Topic.Problem
+      prompt: Could you tell me the problem you are having?
+      entity: StringPrebuiltEntity
+
+    - kind: Question
+      id: question_7GOiRf
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: init:Topic.email
+      prompt: Please provide your work email. Our Support team will get back to you as soon as possible.
+      entity: EmailPrebuiltEntity
+
+    - kind: InvokeFlowAction
+      id: invokeFlowAction_0PisL0
+      input:
+        binding:
+          text: =Topic.Problem
+          text_1: =Topic.email
+
+      output: {}
+      flowId: 18bef357-578a-ef11-ac21-000d3a31b04b
+
+    - kind: SendActivity
+      id: sendActivity_I3IWkQ
+      activity: Thank you for your cooperation and patience
+
+    - kind: EndDialog
+      id: X7IoZE

@@ -1,0 +1,36 @@
+{
+  "$kind": "BotConfiguration",
+  "settings": {
+    "default-2.1.0": {
+      "content": {
+        "conversationStarters": [],
+        "description": "",
+        "displayName": "EpiGuard",
+        "instructions": ""
+      },
+      "spec": {
+        "connectors": [],
+        "knowledgeSources": {
+          "publicSites": [],
+          "sharepointSites": []
+        }
+      }
+    },
+    "GenerativeActionsEnabled": true
+  },
+  "gPTSettings": {
+    "$kind": "GPTSettings",
+    "defaultSchemaName": "cr8dc_epiGuard.gpt.default"
+  },
+  "aISettings": {
+    "$kind": "AISettings",
+    "useModelKnowledge": true,
+    "isFileAnalysisEnabled": true,
+    "isSemanticSearchEnabled": true,
+    "contentModeration": "High",
+    "optInUseLatestModels": true
+  },
+  "recognizer": {
+    "$kind": "GenerativeAIRecognizer"
+  }
+}

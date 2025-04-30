@@ -1,0 +1,9 @@
+kind: ExternalTriggerConfiguration
+externalTriggerSource:
+  kind: WorkflowExternalTrigger
+  flowId: c401e371-4825-f011-8c4e-7c1e524ab8b0
+
+extensionData:
+  flowName: 686ebe58-cd62-e3b3-bd9d-4517eceeddc9
+  flowUrl: /providers/Microsoft.ProcessSimple/environments/79277977-bd73-e1a4-aeb3-504a39b32112/flows/686ebe58-cd62-e3b3-bd9d-4517eceeddc9
+  triggerConnectionType: SharePoint

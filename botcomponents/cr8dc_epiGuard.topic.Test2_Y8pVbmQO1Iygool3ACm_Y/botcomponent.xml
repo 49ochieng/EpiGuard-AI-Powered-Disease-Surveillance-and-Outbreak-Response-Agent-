@@ -1,0 +1,11 @@
+<botcomponent schemaname="cr8dc_epiGuard.topic.Test2_Y8pVbmQO1Iygool3ACm_Y">
+  <componenttype>16</componenttype>
+  <description>This knowledge source provides information found in Test2 SharePoint.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Test2</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,12 @@
+kind: TaskDialog
+modelDisplayName: Microsoft Planner
+modelDescription: List the tasks assigned to me.
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: cr8dc_epiGuard.shared_planner.shared-planner-8ba793e2-de3e-455b-9116-f1e50da3c38f
+  connectionProperties:
+    mode: Invoker
+
+  operationId: ListMyTasks_V2
+
+outputMode: All

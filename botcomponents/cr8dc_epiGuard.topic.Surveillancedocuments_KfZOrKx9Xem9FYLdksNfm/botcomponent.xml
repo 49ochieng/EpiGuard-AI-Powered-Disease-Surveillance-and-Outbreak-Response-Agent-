@@ -1,0 +1,11 @@
+<botcomponent schemaname="cr8dc_epiGuard.topic.Surveillancedocuments_KfZOrKx9Xem9FYLdksNfm">
+  <componenttype>16</componenttype>
+  <description>This knowledge source provides information found in Surveillance documents SharePoint.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Surveillance documents</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

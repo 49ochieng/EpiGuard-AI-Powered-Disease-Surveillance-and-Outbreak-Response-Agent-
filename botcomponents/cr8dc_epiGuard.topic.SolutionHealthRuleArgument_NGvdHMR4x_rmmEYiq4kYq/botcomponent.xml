@@ -1,0 +1,11 @@
+<botcomponent schemaname="cr8dc_epiGuard.topic.SolutionHealthRuleArgument_NGvdHMR4x_rmmEYiq4kYq">
+  <componenttype>16</componenttype>
+  <description>This knowledge source answers questions found in the following Dataverse items: Solution Health Rule Argument</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Solution Health Rule Argument</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

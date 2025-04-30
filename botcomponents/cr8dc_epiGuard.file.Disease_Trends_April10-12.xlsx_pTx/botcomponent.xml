@@ -1,0 +1,12 @@
+<botcomponent schemaname="cr8dc_epiGuard.file.Disease_Trends_April10-12.xlsx_pTx">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Disease_Trends_April10-12.xlsx</description>
+  <filedata mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Disease_Trends_April10-12.xlsx</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Disease_Trends_April10-12.xlsx</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

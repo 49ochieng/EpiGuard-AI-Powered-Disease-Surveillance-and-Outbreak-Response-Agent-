@@ -1,0 +1,12 @@
+kind: TaskDialog
+modelDisplayName: Send an email
+modelDescription: This operation sends an email message.
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: cr8dc_epiGuard.shared_outlook.shared-outlook-d13659a5-6d94-454b-a279-770ee1d33f7c
+  connectionProperties:
+    mode: Invoker
+
+  operationId: SendEmailV2
+
+outputMode: All

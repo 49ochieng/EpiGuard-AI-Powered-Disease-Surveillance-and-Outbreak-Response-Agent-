@@ -1,0 +1,4 @@
+kind: KnowledgeSourceConfiguration
+source:
+  kind: SharePointSearchSource
+  site: https://armely.sharepoint.com/sites/Test-team/Surveillance%20documents

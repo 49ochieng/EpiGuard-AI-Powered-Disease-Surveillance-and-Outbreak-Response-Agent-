@@ -1,0 +1,29 @@
+<dvtablesearch dvtablesearchid="c4d6c3d5-1876-4a60-9d5c-a4f239842436">
+  <connectionreference>
+    <connectionreferencelogicalname>cr8dc_epiGuard.cr.5u3XHbAp</connectionreferencelogicalname>
+  </connectionreference>
+  <iscustomizable>0</iscustomizable>
+  <knowledgeconfig>{
+  "$kind": "IngestionBasedGraphSearchConfiguration",
+  "driveItems": [
+    {
+      "$kind": "GraphDriveItemSyncDetails",
+      "displayName": "Test2",
+      "webUrl": "https://armely.sharepoint.com/sites/Test-team/Test2",
+      "driveId": "",
+      "itemId": "root",
+      "sharepointIds": {
+        "$kind": "SharepointIds",
+        "webId": "badb1af2-b200-434c-a046-41927d9989bb",
+        "listId": "fd0213e3-8fc2-4795-8896-48eb5745b4da",
+        "siteId": "f75c5cba-70cf-4129-b224-72406fc46231",
+        "siteUrl": "https://armely.sharepoint.com/sites/Test-team"
+      }
+    }
+  ]
+}</knowledgeconfig>
+  <name>Test2_CErtJqAHAKDP3Ng5ZSqGi</name>
+  <searchtype>1</searchtype>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</dvtablesearch>

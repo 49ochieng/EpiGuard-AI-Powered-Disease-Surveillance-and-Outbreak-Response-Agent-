@@ -1,0 +1,72 @@
+kind: AdaptiveDialog
+modelDescription: Trigger this topic when a user requests a summary, comparison, or full analysis of any document. This includes legal or commercial documents, contracts, and other detailed texts. The response should provide a concise summary, highlight key points, and offer a thorough comparison if multiple documents are involved. Ensure clarity and accuracy, especially for legal and commercial content, to help users understand the essential information quickly and effectively.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  priority: -1
+  intent: {}
+  actions:
+    - kind: SearchAndSummarizeContent
+      id: search-content
+      variable: Topic.Answer
+      userInput: =System.Activity.Text
+      moderationLevel: High
+      fileSearchDataSource:
+        searchFilesMode:
+          kind: SearchAllFiles
+
+      knowledgeSources:
+        kind: SearchAllKnowledgeSources
+
+      publicDataSource: {}
+      sharePointSearchDataSource: {}
+
+    - kind: ConditionGroup
+      id: has-answer-conditions
+      conditions:
+        - id: has-answer
+          condition: =!IsBlank(Topic.Answer)
+          actions:
+            - kind: Question
+              id: question_e36KJ3
+              interruptionPolicy:
+                allowInterruption: true
+
+              variable: init:Topic.Choice
+              prompt: Do you want response as Docx?
+              entity:
+                kind: EmbeddedEntity
+                definition:
+                  kind: ClosedListEntity
+                  items:
+                    - id: Yes
+                      displayName: Yes
+
+                    - id: No
+                      displayName: No
+
+            - kind: ConditionGroup
+              id: conditionGroup_5YRxZF
+              conditions:
+                - id: conditionItem_1xsMx1
+                  condition: =Topic.Choice = 'cr8dc_epiGuard.topic.GeneratewordDocument.main.question_e36KJ3'.Yes
+                  actions:
+                    - kind: InvokeFlowAction
+                      id: invokeFlowAction_gjOiLp
+                      input:
+                        binding:
+                          text: =Topic.Answer
+
+                      output: {}
+                      flowId: fba4a508-9dfb-ef11-bae3-7c1e528206ea
+
+                    - kind: SendActivity
+                      id: sendActivity_Qn2N1f
+                      activity: "A copy of the response has been saved on the sharepoint library below: https://armely.sharepoint.com/sites/ArmelyLLC/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FArmelyLLC%2FShared%20Documents%2FEngineering%20Research%20and%20Development"
+
+                - id: conditionItem_SaxVVF
+                  condition: =Topic.Choice = 'cr8dc_epiGuard.topic.GeneratewordDocument.main.question_e36KJ3'.No
+
+            - kind: EndDialog
+              id: end-topic
+              clearTopicQueue: true

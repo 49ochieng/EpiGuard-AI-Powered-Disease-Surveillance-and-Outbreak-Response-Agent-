@@ -1,0 +1,10 @@
+kind: KnowledgeSourceConfiguration
+source:
+  kind: GraphConnectorSearchSource
+  connectionId:
+    schemaName: cr8dc_epiGuard.envVar.Tbcf_jl0Ir2f8FA8Bf3sd
+
+  connectionName: FileConnector1
+  contentSourceDisplayName: Fileshare
+  contentSourceIcon: https://res.sdf.cdn.office.net/admincenter/admin-content/FileConnectorLogo_Medium.png
+  publisherName: Microsoft

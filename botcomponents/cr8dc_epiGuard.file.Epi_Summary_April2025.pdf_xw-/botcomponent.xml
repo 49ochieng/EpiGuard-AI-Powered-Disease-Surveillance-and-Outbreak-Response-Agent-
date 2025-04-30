@@ -1,0 +1,12 @@
+<botcomponent schemaname="cr8dc_epiGuard.file.Epi_Summary_April2025.pdf_xw-">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Epi_Summary_April2025.pdf</description>
+  <filedata mimetype="application/pdf">Epi_Summary_April2025.pdf</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Epi_Summary_April2025.pdf</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

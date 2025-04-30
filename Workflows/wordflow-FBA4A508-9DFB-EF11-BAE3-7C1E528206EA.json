@@ -1,0 +1,147 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_wordonlinebusiness": {
+        "api": {
+          "name": "shared_wordonlinebusiness"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "armely_sharedwordonlinebusiness_ca0b1"
+        },
+        "runtimeSource": "invoker"
+      },
+      "shared_sharepointonline": {
+        "api": {
+          "name": "shared_sharepointonline"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "armely_sharedsharepointonline_837e4"
+        },
+        "runtimeSource": "invoker"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "description": "Answer",
+                  "title": "Answer",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "b8f61c18-7224-4f8a-9c5f-72fbce5df764"
+          }
+        }
+      },
+      "actions": {
+        "Respond_to_Copilot": {
+          "type": "Response",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": {}
+            },
+            "statusCode": 200,
+            "body": {}
+          },
+          "runAfter": {
+            "Create_file": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "81c94f73-dd52-465c-ad3b-a4686da63cc3"
+          }
+        },
+        "Compose": {
+          "type": "Compose",
+          "inputs": "@triggerBody()?['text']",
+          "runAfter": {}
+        },
+        "Populate_a_Microsoft_Word_template": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "source": "groups/72c476a0-cdbb-4b01-8497-af48567c3664",
+              "drive": "b!ulxc989wKUGyJHJAb8RiMfIa27oAskxDoEZBkn2ZibtsNeI9b8EkS4hxKCzLDNPP",
+              "file": "014OXXT6S2RZLQZTV6FZG2JWU3NNFF6X3K",
+              "dynamicFileSchema/-1444764572": "@triggerBody()?['text']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_wordonlinebusiness",
+              "operationId": "CreateFileItem",
+              "connectionName": "shared_wordonlinebusiness"
+            }
+          },
+          "runAfter": {
+            "Compose": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "014OXXT6VNDH6N6SPC2VH2UQD223FHGQ3R": "/copilot template.docx",
+            "014OXXT6S2RZLQZTV6FZG2JWU3NNFF6X3K": "/Armely_Documentation_Template.docx"
+          }
+        },
+        "Create_file": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "dataset": "https://armely.sharepoint.com/sites/ArmelyLLC",
+              "folderPath": "/Shared Documents/Engineering Research and Development",
+              "name": "@concat('Response_', utcNow('yyyyMMddHHmmss'), '_', rand(1000,9999), '.docx')",
+              "body": "@body('Populate_a_Microsoft_Word_template')"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+              "operationId": "CreateFile",
+              "connectionName": "shared_sharepointonline"
+            }
+          },
+          "runAfter": {
+            "Populate_a_Microsoft_Word_template": [
+              "Succeeded"
+            ]
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        }
+      },
+      "outputs": {},
+      "description": "Run a flow from Copilot and send back a response."
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

@@ -1,0 +1,11 @@
+<botcomponent schemaname="cr8dc_epiGuard.gpt.default">
+  <componenttype>15</componenttype>
+  <description>EpiGuard is a smart, autonomous agent designed to support disease surveillance and outbreak response. It assists public health professionals by processing clinical and field reports uploaded through SharePoint or received via email. Using OCR, summarization models, and Power Automate workflows, EpiGuard extracts critical information, identifies patterns, predicts outbreak risk, and coordinates follow-up actions. The agent can generate official summaries, compare historical trends, and assign tasks through Microsoft Planner. All responses are context-aware, secure, and compliant with data sensitivity policies. EpiGuard empowers organizations to detect threats early, act quickly, and improve community health outcomes.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>EpiGuard</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

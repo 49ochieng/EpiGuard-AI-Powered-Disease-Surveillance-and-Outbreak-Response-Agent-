@@ -1,0 +1,11 @@
+<botcomponent_dvtablesearchset>
+  <botcomponent_dvtablesearch botcomponentid.schemaname="cr8dc_epiGuard.topic.InquiryDetails_w4PNwgTAp7kPB6XZ4mKDA" dvtablesearchid.dvtablesearchid="9023f0cf-da9b-4e4f-ab37-18986c242bb1">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_dvtablesearch>
+  <botcomponent_dvtablesearch botcomponentid.schemaname="cr8dc_epiGuard.topic.SolutionHealthRuleArgument_NGvdHMR4x_rmmEYiq4kYq" dvtablesearchid.dvtablesearchid="9380c4a2-eaf1-4e7f-b902-e735e13b1636">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_dvtablesearch>
+  <botcomponent_dvtablesearch botcomponentid.schemaname="cr8dc_epiGuard.topic.Test2_Y8pVbmQO1Iygool3ACm_Y" dvtablesearchid.dvtablesearchid="c4d6c3d5-1876-4a60-9d5c-a4f239842436">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_dvtablesearch>
+</botcomponent_dvtablesearchset>

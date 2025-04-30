@@ -1,0 +1,10 @@
+<dvtablesearchentity dvtablesearchentityid="655f6a38-8441-4521-9775-e15f9dd8ab32">
+  <dvtablesearch>
+    <dvtablesearchid>9023f0cf-da9b-4e4f-ab37-18986c242bb1</dvtablesearchid>
+  </dvtablesearch>
+  <entitylogicalname>bdg_inquirydetails</entitylogicalname>
+  <iscustomizable>0</iscustomizable>
+  <name>bdg_InquiryDetails</name>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</dvtablesearchentity>

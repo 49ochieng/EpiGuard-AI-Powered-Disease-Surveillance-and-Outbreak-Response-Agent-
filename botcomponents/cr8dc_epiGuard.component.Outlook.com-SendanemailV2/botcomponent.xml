@@ -1,0 +1,10 @@
+<botcomponent schemaname="cr8dc_epiGuard.component.Outlook.com-SendanemailV2">
+  <componenttype>9</componenttype>
+  <iscustomizable>0</iscustomizable>
+  <name>Outlook.com - Send an email (V2)</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

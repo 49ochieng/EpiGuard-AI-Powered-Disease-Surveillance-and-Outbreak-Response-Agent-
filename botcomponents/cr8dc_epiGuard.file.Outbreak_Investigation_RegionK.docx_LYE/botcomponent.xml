@@ -1,0 +1,12 @@
+<botcomponent schemaname="cr8dc_epiGuard.file.Outbreak_Investigation_RegionK.docx_LYE">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Outbreak_Investigation_RegionK.docx</description>
+  <filedata mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document">Outbreak_Investigation_RegionK.docx</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Outbreak_Investigation_RegionK.docx</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

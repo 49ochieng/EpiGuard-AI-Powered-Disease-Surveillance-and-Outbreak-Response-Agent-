@@ -1,0 +1,10 @@
+<botcomponent schemaname="cr8dc_epiGuard.topic.FileConnector1_MxfiN9ggvJ426ATuJZflj">
+  <componenttype>16</componenttype>
+  <iscustomizable>0</iscustomizable>
+  <name>FileConnector1</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,28 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnUnknownIntent
+  id: main
+  actions:
+    - kind: ConditionGroup
+      id: conditionGroup_LktzXw
+      conditions:
+        - id: conditionItem_tlGIVo
+          condition: =System.FallbackCount < 3
+          actions:
+            - kind: SendActivity
+              id: sendMessage_QZreqo
+              activity: I'm sorry {System.User.FirstName}, but I can't access that document — it may be confidential or simply not available in the library!
+
+            - kind: Question
+              id: question_G8VMq9
+              interruptionPolicy:
+                allowInterruption: true
+
+              variable: init:Topic.Var1
+              prompt: Do you have any other questions? Or can you try rephrasing?
+              entity: StringPrebuiltEntity
+
+      elseActions:
+        - kind: BeginDialog
+          id: 5aXj5M
+          dialog: cr8dc_epiGuard.topic.Escalate

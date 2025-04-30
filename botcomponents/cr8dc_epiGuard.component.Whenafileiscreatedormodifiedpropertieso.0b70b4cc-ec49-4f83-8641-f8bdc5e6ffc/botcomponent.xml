@@ -1,0 +1,12 @@
+<botcomponent schemaname="cr8dc_epiGuard.component.Whenafileiscreatedormodifiedpropertieso.0b70b4cc-ec49-4f83-8641-f8bdc5e6ffc">
+  <componenttype>17</componenttype>
+  <description>Trigger your agent with certain message upon event: When a file is created or modified (properties only).</description>
+  <iconurl>https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1745/1.0.1745.4169/sharepointonline/icon.png</iconurl>
+  <iscustomizable>0</iscustomizable>
+  <name>When a file is created or modified (properties only)</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

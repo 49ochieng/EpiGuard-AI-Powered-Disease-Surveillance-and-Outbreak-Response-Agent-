@@ -1,0 +1,12 @@
+<botcomponent schemaname="cr8dc_epiGuard.file.Outbreak_Report_Week15.docx_lLV">
+  <componenttype>14</componenttype>
+  <description>This knowledge source searches information contained in Outbreak_Report_Week15.docx</description>
+  <filedata mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document">Outbreak_Report_Week15.docx</filedata>
+  <iscustomizable>0</iscustomizable>
+  <name>Outbreak_Report_Week15.docx</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

@@ -1,0 +1,11 @@
+<botcomponent schemaname="cr8dc_epiGuard.topic.InquiryDetails_w4PNwgTAp7kPB6XZ4mKDA">
+  <componenttype>16</componenttype>
+  <description>This knowledge source answers questions found in the following Dataverse tables:  InquiryDetails</description>
+  <iscustomizable>0</iscustomizable>
+  <name> InquiryDetails</name>
+  <parentbotid>
+    <schemaname>cr8dc_epiGuard</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>
