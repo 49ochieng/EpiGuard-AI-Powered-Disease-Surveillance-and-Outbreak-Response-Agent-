@@ -1,7 +1,8 @@
 
 # EpiGuard: AI-Powered Disease Surveillance and Outbreak Response Agent
 
-![EpiGuard Overview](Picture1.png)
+![image](https://github.com/user-attachments/assets/55742538-8fbd-466f-aa61-b20923a97e74)
+
 
 ## Overview
 
@@ -11,7 +12,8 @@
 
 ## Flow Diagram
 
-![Flow Diagram](Picture5.png)
+![image](https://github.com/user-attachments/assets/107ce54e-441f-4ef5-80c2-6fd73085dbbd)
+
 
 ---
 
@@ -35,7 +37,8 @@ EpiGuard solves this by orchestrating a network of intelligent automation and AI
 
 ## Architecture Diagram
 
-![Architecture Diagram](architecture_diagram.png)
+![image](https://github.com/user-attachments/assets/83f51b65-e3ec-416f-878e-1e372f72c76a)
+
 
 ---
 
@@ -97,7 +100,8 @@ Via **Microsoft Graph Connector**, EpiGuard can:
 - Store attachments to on-prem file shares  
 - Extend visibility beyond cloud environments  
 
-![On-Prem Data](Picture1.png)
+![image](https://github.com/user-attachments/assets/6a5a1433-6288-4945-ac17-2090f3d1fc45)
+
 
 ---
 
@@ -114,7 +118,8 @@ EpiGuard pulls data from:
 - Emails  
 - Azure OpenAI Models  
 
-![Unified Intelligence](Picture3.png)
+![image](https://github.com/user-attachments/assets/23152c8b-cf42-480d-9205-5909418e718e)
+
 
 ---
 
@@ -157,7 +162,8 @@ EpiGuard pulls data from:
 - Available in **Microsoft Teams**  
 - Seamless on desktop and mobile  
 
-![Teams Integration](Picture2.png)
+![image](https://github.com/user-attachments/assets/4ee2bf33-583a-4fec-9d52-206404e4ab76)
+
 
 ---
 
@@ -190,7 +196,8 @@ EpiGuard pulls data from:
    - Go to **Power Apps** → **Solutions** → **Import**  
    - Upload `.zip` file (Managed – not editable)
 
-   ![Import Screenshot](Picture1.png)
+   ![image](https://github.com/user-attachments/assets/a32a5c57-b5a7-4d03-aef4-64ac09162c1d)
+
 
 3. **Launch Copilot Studio**  
    - Open imported solution  
@@ -199,21 +206,18 @@ EpiGuard pulls data from:
 4. **Configure & Publish Teams Channel**  
    - Navigate to **Channels**  
    - Select **Microsoft Teams**  
-   - Click **Allow** → Submit for approval  
+   - Click **Allow** → Submit for approval
+   ![image](https://github.com/user-attachments/assets/1a8beeb5-27a0-4bd1-b0ba-2099ffce9e45)
+5.	**Teams Admin Portal Approval**
+  - The bot will appear in the Teams admin portal.
+  - An admin can approve it for specific users or make it available to everyone.
+![image](https://github.com/user-attachments/assets/36856072-8b56-4248-ba43-f61ed6ccc5fc)
 
----
+ 
+6.	Teams User Access
+ - Once approved, the agent will be live in the user’s Teams app.
+ - Users can start chatting immediately using starter prompts.
 
-### Teams Admin Portal
-
-- Approve bot for specific users or all users  
-- Appears under Teams Apps Admin Center  
-
----
-
-### Teams User Access
-
-- Agent goes live in Teams once approved  
-- Users can chat with EpiGuard using starter prompts  
 
 ---
 
