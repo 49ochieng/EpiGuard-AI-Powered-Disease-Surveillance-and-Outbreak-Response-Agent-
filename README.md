@@ -22,7 +22,7 @@ Health organizations face growing challenges in detecting, responding to, and ma
 
 ## Solution: EpiGuard
 
-EpiGuard solves this by orchestrating a network of intelligent automation and AI-powered tools to:
+HealthGuard solves this by orchestrating a network of intelligent automation and AI-powered tools to:
 
 - Ingest and analyze various health documents (PDFs, Word, scanned images, emails)
 - Summarize and extract key health indicators
