@@ -69,7 +69,7 @@ HealthGuard is built specifically to align with the **Microsoft AI Agents Hackat
 
 ### 1. OCR-Based Report Ingestion
 
-When new documents (PDFs, images, scanned forms) are uploaded to SharePoint, EpiGuard triggers an OCR flow that:
+When new documents (PDFs, images, scanned forms) are uploaded to SharePoint, HealthGuard triggers an OCR flow that:
 
 - Extracts data from typed or handwritten reports  
 - Summarizes findings using GPT  
