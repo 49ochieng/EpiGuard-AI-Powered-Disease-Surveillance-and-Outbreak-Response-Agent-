@@ -3,7 +3,7 @@
 
 ## Overview
 
-**EpiGuard** is an AI-powered **Copilot Studio agent** designed to revolutionize disease surveillance, health data analysis, and outbreak management. Developed for the **Microsoft AI Agents Hackathon**, EpiGuard harnesses the full power of Microsoft's ecosystem to deliver a **proactive, intelligent, and secure public health assistant** that supports real-world healthcare workflows.
+**HealthGuard** is an AI-powered **Copilot Studio agent** designed to revolutionize disease surveillance, health data analysis, and outbreak management. Developed for the **Microsoft AI Agents Hackathon**, EpiGuard harnesses the full power of Microsoft's ecosystem to deliver a **proactive, intelligent, and secure public health assistant** that supports real-world healthcare workflows.
 
 ---
 
