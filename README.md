@@ -242,7 +242,7 @@ EpiGuard pulls data from:
 
 ## Conclusion
 
-**EpiGuard** is not just a chatbot. It’s an **autonomous, intelligent, and secure health assistant** that brings together the full Microsoft ecosystem to solve real-world disease surveillance challenges. From OCR to outbreak detection, document analysis to task management — EpiGuard is built to deliver meaningful impact.
+**HealthGuard** is not just a chatbot. It’s an **autonomous, intelligent, and secure health assistant** that brings together the full Microsoft ecosystem to solve real-world disease surveillance challenges. From OCR to outbreak detection, document analysis to task management — EpiGuard is built to deliver meaningful impact.
 
 > **Built with Copilot Studio.**
 
