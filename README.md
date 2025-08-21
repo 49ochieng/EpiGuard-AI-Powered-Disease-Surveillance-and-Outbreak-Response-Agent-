@@ -41,7 +41,7 @@ HealthGuard solves this by orchestrating a network of intelligent automation and
 
 ## Hackathon Alignment
 
-EpiGuard is built specifically to align with the **Microsoft AI Agents Hackathon** objectives:
+HealthGuard is built specifically to align with the **Microsoft AI Agents Hackathon** objectives:
 
 - **Copilot Studio Integration**: Custom topics, memory, actions, error handling, and channel publishing.
 - **Agent Orchestration**: Triggers and orchestrates other flows, agents, and APIs.
