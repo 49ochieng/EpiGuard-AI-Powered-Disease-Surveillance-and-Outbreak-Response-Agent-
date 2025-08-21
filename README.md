@@ -1,5 +1,5 @@
 
-# EpiGuard: AI-Powered Disease Surveillance and Outbreak Response Agent
+# HealthGuard: AI-Powered Disease Surveillance and Outbreak Response Agent
 
 ![image](https://github.com/user-attachments/assets/55742538-8fbd-466f-aa61-b20923a97e74)
 
