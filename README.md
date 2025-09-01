@@ -91,7 +91,7 @@ When new documents (PDFs, images, scanned forms) are uploaded to SharePoint, Hea
 
 ### 3. On-Prem Data Access
 
-Via **Microsoft Graph Connector**, EpiGuard can:
+Via **Microsoft Graph Connector**, HealthGuard can:
 
 - Read from local folders  
 - Store attachments to on-prem file shares  
