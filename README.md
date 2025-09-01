@@ -75,7 +75,7 @@ When new documents (PDFs, images, scanned forms) are uploaded to SharePoint, Hea
 - Summarizes findings using GPT  
 - Adds the document to the searchable knowledge base  
 
-> **Why OCR?** Healthcare data comes in all forms — including paper-based handwritten documents. With OCR, EpiGuard ensures all health records are usable regardless of origin.
+> **Why OCR?** Healthcare data comes in all forms — including paper-based handwritten documents. With OCR, HealthGuard ensures all health records are usable regardless of origin.
 
 ---
 
@@ -187,7 +187,7 @@ HealthGuard pulls data from:
 ### Step-by-Step Setup
 
 1. **Download the Zipped Solution**  
-   GitHub repo → `Deployment` folder → `EpiGuardSolution.zip`
+   GitHub repo → `Deployment` folder → `HealthGuardSolution.zip`
 
 2. **Import into Power Apps**  
    - Go to **Power Apps** → **Solutions** → **Import**  
@@ -242,7 +242,7 @@ HealthGuard pulls data from:
 
 ## Conclusion
 
-**HealthGuard** is not just a chatbot. It’s an **autonomous, intelligent, and secure health assistant** that brings together the full Microsoft ecosystem to solve real-world disease surveillance challenges. From OCR to outbreak detection, document analysis to task management — EpiGuard is built to deliver meaningful impact.
+**HealthGuard** is not just a chatbot. It’s an **autonomous, intelligent, and secure health assistant** that brings together the full Microsoft ecosystem to solve real-world disease surveillance challenges. From OCR to outbreak detection, document analysis to task management — HealthGuard is built to deliver meaningful impact.
 
 > **Built with Copilot Studio.**
 
