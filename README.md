@@ -104,7 +104,7 @@ Via **Microsoft Graph Connector**, EpiGuard can:
 
 ### 4. Multi-Source Intelligence
 
-EpiGuard pulls data from:
+HealthGuard pulls data from:
 
 - SharePoint Libraries  
 - OneDrive  
