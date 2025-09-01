@@ -20,7 +20,7 @@ Health organizations face growing challenges in detecting, responding to, and ma
 
 ---
 
-## Solution: EpiGuard
+## Solution: HealthGuard
 
 HealthGuard solves this by orchestrating a network of intelligent automation and AI-powered tools to:
 
