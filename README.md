@@ -221,10 +221,10 @@ HealthGuard pulls data from:
 ## GitHub Repository Structure
 
 ```
-/epiguard-copilot
+/HealthGuard-copilot
 ├── README.md
 ├── solution/
-│   └── EpiGuardSolution.zip
+│   └── HealthGuardSolution.zip
 ├── flows/
 │   ├── OCRFlow.json
 │   └── EmailProcessingFlow.json
@@ -233,7 +233,7 @@ HealthGuard pulls data from:
 │   ├── Outbreak_Report_Week15.docx
 │   └── Surveillance_CaseData_April2025.csv
 ├── docs/
-│   └── EpiGuardArchitecture.png
+│   └── HealthGuardArchitecture.png
 └── prompts/
     └── starter-prompts.json
 ```
